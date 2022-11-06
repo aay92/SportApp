@@ -12,6 +12,9 @@
 		5BEAA8132918035100C4636B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEAA8122918035100C4636B /* ViewController.swift */; };
 		5BEAA8182918035300C4636B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BEAA8172918035300C4636B /* Assets.xcassets */; };
 		5BEAA81B2918035300C4636B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BEAA8192918035300C4636B /* LaunchScreen.storyboard */; };
+		5BEAA8262918064300C4636B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEAA8252918064300C4636B /* TabBarController.swift */; };
+		5BEAA8292918074200C4636B /* UIColor + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEAA8282918074200C4636B /* UIColor + Ext.swift */; };
+		5BEAA82B2918084500C4636B /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEAA82A2918084500C4636B /* Resources.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		5BEAA8172918035300C4636B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BEAA81A2918035300C4636B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BEAA81C2918035300C4636B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BEAA8252918064300C4636B /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		5BEAA8282918074200C4636B /* UIColor + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Ext.swift"; sourceTree = "<group>"; };
+		5BEAA82A2918084500C4636B /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +60,9 @@
 		5BEAA80D2918035100C4636B /* SportApp */ = {
 			isa = PBXGroup;
 			children = (
+				5BEAA8272918071700C4636B /* Extansion */,
 				5BEAA822291803E600C4636B /* Application */,
-				5BEAA823291803F500C4636B /* Resources */,
+				5BEAA823291803F500C4636B /* SupportingFiles */,
 				5BEAA8242918044800C4636B /* Views */,
 			);
 			path = SportApp;
@@ -70,22 +77,32 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		5BEAA823291803F500C4636B /* Resources */ = {
+		5BEAA823291803F500C4636B /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
 				5BEAA8172918035300C4636B /* Assets.xcassets */,
 				5BEAA8192918035300C4636B /* LaunchScreen.storyboard */,
 				5BEAA81C2918035300C4636B /* Info.plist */,
 			);
-			path = Resources;
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		5BEAA8242918044800C4636B /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				5BEAA8122918035100C4636B /* ViewController.swift */,
+				5BEAA8252918064300C4636B /* TabBarController.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		5BEAA8272918071700C4636B /* Extansion */ = {
+			isa = PBXGroup;
+			children = (
+				5BEAA8282918074200C4636B /* UIColor + Ext.swift */,
+				5BEAA82A2918084500C4636B /* Resources.swift */,
+			);
+			path = Extansion;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,8 +176,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BEAA8132918035100C4636B /* ViewController.swift in Sources */,
+				5BEAA8262918064300C4636B /* TabBarController.swift in Sources */,
+				5BEAA8292918074200C4636B /* UIColor + Ext.swift in Sources */,
 				5BEAA80F2918035100C4636B /* AppDelegate.swift in Sources */,
 				5BEAA8112918035100C4636B /* SceneDelegate.swift in Sources */,
+				5BEAA82B2918084500C4636B /* Resources.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,7 +321,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R7B2Y45548;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SportApp/Resources/Info.plist;
+				INFOPLIST_FILE = SportApp/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -332,7 +352,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R7B2Y45548;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SportApp/Resources/Info.plist;
+				INFOPLIST_FILE = SportApp/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";

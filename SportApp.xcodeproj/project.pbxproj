@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5BB85B2C291ADAD40052F270 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB85B2B291ADAD40052F270 /* SecondaryButton.swift */; };
 		5BEAA80F2918035100C4636B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEAA80E2918035100C4636B /* AppDelegate.swift */; };
 		5BEAA8112918035100C4636B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEAA8102918035100C4636B /* SceneDelegate.swift */; };
 		5BEAA8132918035100C4636B /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEAA8122918035100C4636B /* OverviewViewController.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5BB85B2B291ADAD40052F270 /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
 		5BEAA80B2918035100C4636B /* SportApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BEAA80E2918035100C4636B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BEAA8102918035100C4636B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +55,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5BB85B2A291ADAA70052F270 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5BB85B2B291ADAD40052F270 /* SecondaryButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		5BEAA8022918035100C4636B = {
 			isa = PBXGroup;
 			children = (
@@ -75,7 +85,6 @@
 				5BEAA8272918071700C4636B /* Extansion */,
 				5BEAA822291803E600C4636B /* Application */,
 				5BEAA823291803F500C4636B /* SupportingFiles */,
-				5BEAA8242918044800C4636B /* Views */,
 				5BEAA82E2919808800C4636B /* Controllers */,
 			);
 			path = SportApp;
@@ -98,13 +107,6 @@
 				5BEAA81C2918035300C4636B /* Info.plist */,
 			);
 			path = SupportingFiles;
-			sourceTree = "<group>";
-		};
-		5BEAA8242918044800C4636B /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		5BEAA8272918071700C4636B /* Extansion */ = {
@@ -158,6 +160,7 @@
 		5BEAA836291984F200C4636B /* Overview */ = {
 			isa = PBXGroup;
 			children = (
+				5BB85B2A291ADAA70052F270 /* Views */,
 				5BEAA8122918035100C4636B /* OverviewViewController.swift */,
 			);
 			path = Overview;
@@ -247,6 +250,7 @@
 				5BEAA8292918074200C4636B /* UIColor + Ext.swift in Sources */,
 				5BEAA8392919854D00C4636B /* SessionController.swift in Sources */,
 				5BEAA82D29197D3300C4636B /* NavBarController.swift in Sources */,
+				5BB85B2C291ADAD40052F270 /* SecondaryButton.swift in Sources */,
 				5BEAA80F2918035100C4636B /* AppDelegate.swift in Sources */,
 				5BEAA8112918035100C4636B /* SceneDelegate.swift in Sources */,
 				5BEAA83D291985AC00C4636B /* ProgressController.swift in Sources */,

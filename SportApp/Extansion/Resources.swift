@@ -14,10 +14,14 @@ enum Resources {
         static var separator = UIColor(hexString: "#E7ECEE")
         static var darkGray = UIColor(hexString: "#545C77")
         static var background = UIColor(hexString: "#F8F9F9")
-
+        static var secondary = UIColor(hexString: "#F0F3FF")
     }
     
     enum Strings {
+        enum Overview {
+            static var allWorkouts = "All Workouts"
+        }
+        
         enum TabBar {
             static var overview = "Overview"
             static var session = "Session"
@@ -33,6 +37,10 @@ enum Resources {
             static var progress = UIImage(named: "Analytics.png")
             static var settings = UIImage(named: "Gear")
         }
+    }
+    
+    enum Common {
+        static var downArrow = UIImage(named: "DownArrow")
     }
     
     enum Fonts {

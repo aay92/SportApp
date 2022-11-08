@@ -23,14 +23,14 @@ enum Tabs: Int {
      override func viewDidLoad() {
          super.viewDidLoad()
          configure()
-//         setup()
      }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func configure(){
+     //MARK: - Create tabBar
+     private func configure(){
         tabBar.tintColor = Resources.Color.active
         tabBar.barTintColor = Resources.Color.inactive
         tabBar.backgroundColor = .white
@@ -68,29 +68,4 @@ enum Tabs: Int {
                             progressNavigation,
                             settingNavigation], animated: false)
     }
-     
-     
-     func setup(){
-         
-         let mianViewController = creat(vc: OverviewViewController(), itemName: "Главное", ImageItem: "calendar.badge.clock")
-         
-         let firstViewController = creat(vc: UIViewController(), itemName: "Вторая", ImageItem: "calendar.badge.clock")
-         
-         viewControllers = [mianViewController,
-                            firstViewController]
-     }
-     
-     
-     func creat(vc: UIViewController, itemName: String, ImageItem: String) -> UINavigationController {
-         
-         let item = UITabBarItem(title: itemName, image: UIImage(systemName: ImageItem)?.withAlignmentRectInsets(.init(top: 10, left: 0, bottom: 0, right: 0)), tag: 0)
-         item.titlePositionAdjustment = .init(horizontal: 0, vertical: 0)
-         
-         let navController = UINavigationController(rootViewController: vc)
-         navController.tabBarItem = item
-         
-         return navController
-     }
-    
-             
 }

@@ -16,16 +16,15 @@ class BaseController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        addViews()
+        layoutViews()
         configure()
     }
 }
     
 @objc extension BaseController {
     func addViews(){}
-    
     func layoutViews(){}
-    
     func configure(){
         view.backgroundColor = Resources.Color.background
     }
@@ -39,13 +38,15 @@ class BaseController: UIViewController {
         
     }
 }
+
+//MARK: - Create add Nav Buttons
 extension BaseController {
     func addNavButton(at position: NavBarPosition, with title: String){
         let button = UIButton(type: .system)
         button.setTitle(title, for: .normal)
         button.setTitleColor(Resources.Color.active, for: .normal)
         button.setTitleColor(Resources.Color.inactive, for: .disabled)
-        button.titleLabel?.font = Resources.Fonts.helvelticaRegular(with: 17)
+        button.titleLabel?.font = Resources.Fonts.helvelticaRegular(with: 16)
         
         switch position {
             

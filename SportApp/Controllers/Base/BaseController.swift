@@ -21,18 +21,21 @@ class BaseController: UIViewController {
         configure()
     }
 }
-    
+
+//MARK: - Create main funcs
 @objc extension BaseController {
+    
     func addViews(){}
     func layoutViews(){}
     func configure(){
         view.backgroundColor = Resources.Color.background
     }
-    
+    //    for a job test
     @objc func navBarLeftButtonHandler(){
         print("nav Bar LEFT Button Handler")
     }
     
+    //    for a job test
     @objc func navBarRightButtonHandler(){
         print("nav Bar RIGHT Button Handler")
         

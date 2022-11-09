@@ -44,6 +44,11 @@ extension UIView {
         UIView.animate(withDuration: 0.15) { self.alpha = 1}
 
     }
+    
+    func addViewWithoutTAMIC(_ view: UIView) {
+        addSubview(view)
+        view.translatesAutoresizingMaskIntoConstraints = false
+    }
 
 }
 

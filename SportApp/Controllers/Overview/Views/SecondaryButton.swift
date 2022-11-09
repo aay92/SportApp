@@ -8,6 +8,7 @@
 import UIKit
 
 final class SecondaryButton: UIButton {
+    
     private let label = UILabel()
     private let iconView = UIImageView()
     
@@ -27,16 +28,18 @@ final class SecondaryButton: UIButton {
     }
     
 }
+
 private extension SecondaryButton {
     
     func addViews(){
-        addSubview(label)
-        addSubview(iconView)
+        addViewWithoutTAMIC(label)
+        addViewWithoutTAMIC(iconView)
+
     }
     
     func layoutViews(){
         NSLayoutConstraint.activate([
-         
+            
             iconView.centerYAnchor.constraint(equalTo: centerYAnchor),
             iconView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
             iconView.heightAnchor.constraint(equalToConstant: 5),
@@ -54,12 +57,10 @@ private extension SecondaryButton {
         backgroundColor = Resources.Color.separator
         layer.cornerRadius = 14
         
-        label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = Resources.Color.active
         label.font = Resources.Fonts.helvelticaRegular(with: 15)
         label.textAlignment = .center
         
-        iconView.translatesAutoresizingMaskIntoConstraints = false
         iconView.image = Resources.Common.downArrow?.withRenderingMode(.alwaysTemplate)
         iconView.tintColor = Resources.Color.active
         

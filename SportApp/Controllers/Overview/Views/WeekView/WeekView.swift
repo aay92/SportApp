@@ -12,18 +12,17 @@ final class WeekView: BaseView {
     private let calendar = Calendar.current
     private var stackView = UIStackView()
     
-    
 }
 
 extension WeekView {
     
-    override func addViews(){
-    super.addViews()
+    override func setupViews(){
+    super.setupViews()
         addViewWithoutTAMIC(stackView)
     }
     
-   override func layoutViews(){
-       super.layoutViews()
+   override func constraintViews(){
+       super.constraintViews()
        NSLayoutConstraint.activate([
         stackView.topAnchor.constraint(equalTo: topAnchor),
         stackView.trailingAnchor.constraint(equalTo: trailingAnchor),
@@ -32,19 +31,20 @@ extension WeekView {
        ])
     }
     
-    override func configure(){
-        super.configure()
+    override func configureAppereance(){
+        super.configureAppereance()
         
         stackView.spacing = 7
         stackView.distribution = .fillEqually
         
         var weekDays = calendar.shortStandaloneWeekdaySymbols
+// Remove Sunday in week, for begin week with Monday
         if calendar.firstWeekday == 1 {
             let sunday = weekDays.remove(at: 0)
             weekDays.append(sunday)
         }
+        
         weekDays.enumerated().forEach { index, name in
-            
             let view = WeekDayView()
             view.configure(with: index, and: name)
             stackView.addArrangedSubview(view)

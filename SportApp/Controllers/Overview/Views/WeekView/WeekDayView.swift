@@ -7,7 +7,8 @@
 
 import UIKit
 
-extension WeekView{
+extension WeekView {
+    
     final class WeekDayView: BaseView {
         private let nameLabel = UILabel()
         private let dateLabel = UILabel()
@@ -32,16 +33,16 @@ extension WeekView{
 
 extension WeekView.WeekDayView {
     
-    override func addViews() {
-        super.addViews()
+    override func setupViews() {
+        super.setupViews()
         addViewWithoutTAMIC(stackView)
         stackView.addArrangedSubview(nameLabel)
         stackView.addArrangedSubview(dateLabel)
         
     }
     
-    override func layoutViews() {
-        super.layoutViews()
+    override func constraintViews() {
+        super.constraintViews()
         NSLayoutConstraint.activate([
             stackView.centerYAnchor.constraint(equalTo: centerYAnchor),
             stackView.centerXAnchor.constraint(equalTo: centerXAnchor)
@@ -49,8 +50,8 @@ extension WeekView.WeekDayView {
         
     }
     
-    override func configure() {
-        super.configure()
+    override func configureAppereance() {
+        super.configureAppereance()
         
         layer.cornerRadius = 5
         layer.masksToBounds = true

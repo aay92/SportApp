@@ -17,17 +17,19 @@ enum Tabs: Int, CaseIterable{
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        
+        configureAppereance()
+//        Выбираем нужней таббар в ините и выводим его
+        switchTo(tab: .overview)
     }
-     
-     override func viewDidLoad() {
-         super.viewDidLoad()
-         configureAppereance()
-     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+     
+     func switchTo(tab: Tabs){
+// У UITabBarController есть selectedIndex для выбора таббара
+         selectedIndex = tab.rawValue
+     }
     
      //MARK: - Create tabBar
      private func configureAppereance(){

@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5BB85B2C291ADAD40052F270 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB85B2B291ADAD40052F270 /* SecondaryButton.swift */; };
+		5BB85B2C291ADAD40052F270 /* WAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB85B2B291ADAD40052F270 /* WAButton.swift */; };
 		5BB8D739291C247700C6C496 /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB8D738291C247700C6C496 /* WeekView.swift */; };
 		5BB8D73B291C263600C6C496 /* WeekDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB8D73A291C263600C6C496 /* WeekDayView.swift */; };
 		5BB8D73D291C2AD400C6C496 /* Date + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB8D73C291C2AD400C6C496 /* Date + Ext.swift */; };
-		5BBFED94291D86E400A101AF /* BaseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBFED93291D86E400A101AF /* BaseInfoView.swift */; };
+		5BBFED94291D86E400A101AF /* WABaseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBFED93291D86E400A101AF /* WABaseInfoView.swift */; };
 		5BD87FEA291B91F100A5002E /* OverviewNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD87FE9291B91F100A5002E /* OverviewNavBar.swift */; };
 		5BD87FEC291B922600A5002E /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD87FEB291B922600A5002E /* BaseView.swift */; };
 		5BEAA80F2918035100C4636B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEAA80E2918035100C4636B /* AppDelegate.swift */; };
@@ -31,11 +31,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5BB85B2B291ADAD40052F270 /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
+		5BB85B2B291ADAD40052F270 /* WAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAButton.swift; sourceTree = "<group>"; };
 		5BB8D738291C247700C6C496 /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
 		5BB8D73A291C263600C6C496 /* WeekDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDayView.swift; sourceTree = "<group>"; };
 		5BB8D73C291C2AD400C6C496 /* Date + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + Ext.swift"; sourceTree = "<group>"; };
-		5BBFED93291D86E400A101AF /* BaseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInfoView.swift; sourceTree = "<group>"; };
+		5BBFED93291D86E400A101AF /* WABaseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WABaseInfoView.swift; sourceTree = "<group>"; };
 		5BD87FE9291B91F100A5002E /* OverviewNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewNavBar.swift; sourceTree = "<group>"; };
 		5BD87FEB291B922600A5002E /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		5BEAA80B2918035100C4636B /* SportApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,8 +70,8 @@
 		5BB85B2A291ADAA70052F270 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5BBFED95291ED0E500A101AF /* NavigationBar */,
 				5BB8D737291C245F00C6C496 /* WeekView */,
-				5BB85B2B291ADAD40052F270 /* SecondaryButton.swift */,
 				5BD87FE9291B91F100A5002E /* OverviewNavBar.swift */,
 			);
 			path = Views;
@@ -89,9 +89,26 @@
 		5BBFED92291D86D000A101AF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				5BBFED93291D86E400A101AF /* BaseInfoView.swift */,
+				5BD87FEB291B922600A5002E /* BaseView.swift */,
+				5BBFED93291D86E400A101AF /* WABaseInfoView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		5BBFED95291ED0E500A101AF /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NavigationBar;
+			sourceTree = "<group>";
+		};
+		5BBFED96291ED0FC00A101AF /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				5BEAA8252918064300C4636B /* TabBarController.swift */,
+				5BEAA82C29197D3300C4636B /* NavBarController.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 		5BEAA8022918035100C4636B = {
@@ -154,6 +171,7 @@
 		5BEAA82E2919808800C4636B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5BBFED96291ED0FC00A101AF /* TabBar */,
 				5BEAA8372919850000C4636B /* Setting */,
 				5BEAA836291984F200C4636B /* Overview */,
 				5BEAA835291984E900C4636B /* Session */,
@@ -167,10 +185,8 @@
 			isa = PBXGroup;
 			children = (
 				5BBFED92291D86D000A101AF /* Views */,
-				5BEAA8252918064300C4636B /* TabBarController.swift */,
-				5BEAA82C29197D3300C4636B /* NavBarController.swift */,
 				5BEAA82F291980C400C4636B /* BaseController.swift */,
-				5BD87FEB291B922600A5002E /* BaseView.swift */,
+				5BB85B2B291ADAD40052F270 /* WAButton.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -287,8 +303,8 @@
 				5BEAA8392919854D00C4636B /* SessionController.swift in Sources */,
 				5BB8D73D291C2AD400C6C496 /* Date + Ext.swift in Sources */,
 				5BEAA82D29197D3300C4636B /* NavBarController.swift in Sources */,
-				5BBFED94291D86E400A101AF /* BaseInfoView.swift in Sources */,
-				5BB85B2C291ADAD40052F270 /* SecondaryButton.swift in Sources */,
+				5BBFED94291D86E400A101AF /* WABaseInfoView.swift in Sources */,
+				5BB85B2C291ADAD40052F270 /* WAButton.swift in Sources */,
 				5BEAA80F2918035100C4636B /* AppDelegate.swift in Sources */,
 				5BEAA8112918035100C4636B /* SceneDelegate.swift in Sources */,
 				5BEAA83D291985AC00C4636B /* ProgressController.swift in Sources */,

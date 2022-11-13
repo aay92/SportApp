@@ -10,7 +10,13 @@ import UIKit
 final class OverviewNavBar: BaseView {
     
     private let titleLable = UILabel()
-    private let allWorkoutsButton = SecondaryButton()
+    
+    private let allWorkoutsButton: WAButton = {
+        let button = WAButton(with: .secondary)
+        button.setTitle(Resources.Strings.Overview.allWorkouts)
+        return button
+    }()
+    
     private let addButton = UIButton()
     
     private let weekView = WeekView()
@@ -56,7 +62,7 @@ extension OverviewNavBar {
             allWorkoutsButton.topAnchor.constraint(equalTo: addButton.topAnchor),
             allWorkoutsButton.trailingAnchor.constraint(equalTo: addButton.leadingAnchor, constant: -15),
             allWorkoutsButton.heightAnchor.constraint(equalToConstant: 28),
-            allWorkoutsButton.widthAnchor.constraint(equalToConstant: 130),
+//            allWorkoutsButton.widthAnchor.constraint(equalToConstant: 130),
             
             titleLable.centerYAnchor.constraint(equalTo: allWorkoutsButton.centerYAnchor),
             titleLable.trailingAnchor.constraint(equalTo: allWorkoutsButton.leadingAnchor),
@@ -80,7 +86,7 @@ extension OverviewNavBar {
         titleLable.textColor = Resources.Color.textGray
         titleLable.font = Resources.Fonts.helvelticaRegular(with: 22)
         
-        allWorkoutsButton.setTitle(Resources.Strings.Overview.allWorkouts)
+//        allWorkoutsButton.setTitle(Resources.Strings.Overview.allWorkouts, for: .normal)
         
         addButton.setImage(Resources.Common.add, for: .normal)
         

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B6B37082922222700AA1CD9 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6B37072922222700AA1CD9 /* TimerView.swift */; };
+		5B6B370B2922230D00AA1CD9 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6B370A2922230D00AA1CD9 /* ProgressView.swift */; };
 		5BB85B2C291ADAD40052F270 /* WAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB85B2B291ADAD40052F270 /* WAButton.swift */; };
 		5BB8D739291C247700C6C496 /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB8D738291C247700C6C496 /* WeekView.swift */; };
 		5BB8D73B291C263600C6C496 /* WeekDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB8D73A291C263600C6C496 /* WeekDayView.swift */; };
@@ -31,6 +33,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B6B37072922222700AA1CD9 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		5B6B370A2922230D00AA1CD9 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		5BB85B2B291ADAD40052F270 /* WAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAButton.swift; sourceTree = "<group>"; };
 		5BB8D738291C247700C6C496 /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
 		5BB8D73A291C263600C6C496 /* WeekDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDayView.swift; sourceTree = "<group>"; };
@@ -67,10 +71,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B6B37062922220B00AA1CD9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5B6B3709292222F500AA1CD9 /* Timer */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5B6B3709292222F500AA1CD9 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				5B6B37072922222700AA1CD9 /* TimerView.swift */,
+				5B6B370A2922230D00AA1CD9 /* ProgressView.swift */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
 		5BB85B2A291ADAA70052F270 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				5BBFED95291ED0E500A101AF /* NavigationBar */,
 				5BB8D737291C245F00C6C496 /* WeekView */,
 				5BD87FE9291B91F100A5002E /* OverviewNavBar.swift */,
 			);
@@ -93,13 +113,6 @@
 				5BBFED93291D86E400A101AF /* WABaseInfoView.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		5BBFED95291ED0E500A101AF /* NavigationBar */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = NavigationBar;
 			sourceTree = "<group>";
 		};
 		5BBFED96291ED0FC00A101AF /* TabBar */ = {
@@ -202,6 +215,7 @@
 		5BEAA835291984E900C4636B /* Session */ = {
 			isa = PBXGroup;
 			children = (
+				5B6B37062922220B00AA1CD9 /* Views */,
 				5BEAA8382919854D00C4636B /* SessionController.swift */,
 			);
 			path = Session;
@@ -304,6 +318,8 @@
 				5BB8D73D291C2AD400C6C496 /* Date + Ext.swift in Sources */,
 				5BEAA82D29197D3300C4636B /* NavBarController.swift in Sources */,
 				5BBFED94291D86E400A101AF /* WABaseInfoView.swift in Sources */,
+				5B6B37082922222700AA1CD9 /* TimerView.swift in Sources */,
+				5B6B370B2922230D00AA1CD9 /* ProgressView.swift in Sources */,
 				5BB85B2C291ADAD40052F270 /* WAButton.swift in Sources */,
 				5BEAA80F2918035100C4636B /* AppDelegate.swift in Sources */,
 				5BEAA8112918035100C4636B /* SceneDelegate.swift in Sources */,

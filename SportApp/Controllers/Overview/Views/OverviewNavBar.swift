@@ -62,7 +62,7 @@ extension OverviewNavBar {
             allWorkoutsButton.topAnchor.constraint(equalTo: addButton.topAnchor),
             allWorkoutsButton.trailingAnchor.constraint(equalTo: addButton.leadingAnchor, constant: -15),
             allWorkoutsButton.heightAnchor.constraint(equalToConstant: 28),
-//            allWorkoutsButton.widthAnchor.constraint(equalToConstant: 130),
+            allWorkoutsButton.widthAnchor.constraint(equalToConstant: 130),
             
             titleLable.centerYAnchor.constraint(equalTo: allWorkoutsButton.centerYAnchor),
             titleLable.trailingAnchor.constraint(equalTo: allWorkoutsButton.leadingAnchor),
@@ -85,9 +85,7 @@ extension OverviewNavBar {
         titleLable.text = Resources.Strings.Overview.textNavBar
         titleLable.textColor = Resources.Color.textGray
         titleLable.font = Resources.Fonts.helvelticaRegular(with: 22)
-        
-//        allWorkoutsButton.setTitle(Resources.Strings.Overview.allWorkouts, for: .normal)
-        
+                
         addButton.setImage(Resources.Common.add, for: .normal)
         
         

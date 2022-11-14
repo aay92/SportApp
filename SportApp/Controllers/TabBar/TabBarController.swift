@@ -19,7 +19,7 @@ enum Tabs: Int, CaseIterable{
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         configureAppereance()
 //        Выбираем нужней таббар в ините и выводим его
-        switchTo(tab: .overview)
+        switchTo(tab: .session)
     }
     
     required init?(coder: NSCoder) {

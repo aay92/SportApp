@@ -68,7 +68,7 @@ extension WABaseInfoView {
             
             button.trailingAnchor.constraint(equalTo: trailingAnchor),
             button.centerYAnchor.constraint(equalTo: titleLabel.centerYAnchor),
-//            button.widthAnchor.constraint(equalToConstant: 130),
+            button.widthAnchor.constraint(equalToConstant: 130),
             button.heightAnchor.constraint(equalToConstant: 28),
             
             contentView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 10),

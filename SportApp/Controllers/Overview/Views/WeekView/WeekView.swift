@@ -17,7 +17,7 @@ final class WeekView: BaseView {
 extension WeekView {
     
     override func setupViews(){
-    super.setupViews()
+        super.setupViews()
         addViewWithoutTAMIC(stackView)
     }
     
@@ -37,9 +37,9 @@ extension WeekView {
         stackView.spacing = 7
         stackView.distribution = .fillEqually
         
-        var weekDays = calendar.shortStandaloneWeekdaySymbols
-// Remove Sunday in week, for begin week with Monday
-        if calendar.firstWeekday == 1 {
+        var weekDays = Date.calendar.shortStandaloneWeekdaySymbols
+        // Remove Sunday in week, for begin week with Monday
+        if Date.calendar.firstWeekday == 2 {
             let sunday = weekDays.remove(at: 0)
             weekDays.append(sunday)
         }
@@ -47,6 +47,9 @@ extension WeekView {
         weekDays.enumerated().forEach { index, name in
             let view = WeekDayView()
             view.configure(with: index, and: name)
+            print("\(index)")
+            print("\(name)")
+
             stackView.addArrangedSubview(view)
         }
     }

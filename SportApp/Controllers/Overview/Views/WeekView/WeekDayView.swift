@@ -10,6 +10,7 @@ import UIKit
 extension WeekView {
     
     final class WeekDayView: BaseView {
+        
         private let nameLabel = UILabel()
         private let dateLabel = UILabel()
         private let stackView = UIStackView()
@@ -18,7 +19,8 @@ extension WeekView {
         func configure(with index: Int, and name: String) {
             let startOfWeek = Date().startOfWeek
             let currentDay = startOfWeek.agoForward(to: index)
-            let day = Calendar.current.component(.day, from: currentDay)
+            print("\(currentDay)")
+            let day = Calendar.current.component(.day, from: currentDay )
             let isToday = currentDay.stripTime() == Date().stripTime()
             //            Color date and text in different condition
             backgroundColor = isToday ? Resources.Color.active : Resources.Color.background

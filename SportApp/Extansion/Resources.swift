@@ -27,6 +27,14 @@ enum Resources {
             static let allWorkouts = "All Workouts"
             static let textNavBar = "Today"
         }
+        enum Session {
+            static let navBarLeftStart = "Start   "
+            static let navBarLeftPause = "Pause"
+            static let navBarRightFinish = "Finish"
+            static let elapsedTimeLabel = "Elapsed Time"
+            static let remainengTime = "Remaineng Time"
+
+        }
         
         enum TabBar {
             static func title(for Tab: Tabs) -> String {

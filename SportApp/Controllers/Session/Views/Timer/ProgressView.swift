@@ -12,7 +12,8 @@ import UIKit
 extension TimerView {
     final class ProgressView: UIView {
         func drawProgress(with percent: CGFloat){
-            
+//            Удаление слоев
+            layer.sublayers?.removeAll()
 //          (15 + 40) * 2 - 15 Это отступ и 40 отступ до контента(до линии прогресса), умножаем на 2 так как с двух сторо
             let circleFrame = UIScreen.main.bounds.width - (15 + 40) * 2
             let radius = circleFrame / 2

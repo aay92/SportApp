@@ -9,10 +9,26 @@ import UIKit
 
 class SessionController: BaseController {
 
-    private let timerView: TimerView = {
-        let view = TimerView()
-        return view
-    }()
+    private let timerView = TimerView()
+    private let timerDuration = 13.0
+    
+    override func navBarLeftButtonHandler(){
+        if timerView.state == .isStopped {
+            timerView.startTimer()
+        } else {
+            timerView.stopTimer()
+        }
+        
+        timerView.state = timerView.state == .isRunning ? .isStopped : .isRunning
+        setTitleForNavButton(timerView.state == .isRunning ? Resources.Strings.Session.navBarLeftPause : Resources.Strings.Session.navBarLeftStart, at: .left)
+    }
+    
+    override func navBarRightButtonHandler(){
+        timerView.stopTimer()
+        timerView.state = .isStopped
+        
+        setTitleForNavButton(Resources.Strings.Session.navBarRightFinish, at: .right)
+    }
 }
 
 extension SessionController {
@@ -39,8 +55,10 @@ extension SessionController {
             title = "High intensity Cardio"
             navigationController?.tabBarItem.title = Resources.Strings.TabBar.title(for: Tabs.session)
             
-            addNavButton(at: .left, with: "Pause")
-            addNavButton(at: .right, with: "Finish")
+            addNavButton(at: .left, with: Resources.Strings.Session.navBarLeftStart)
+            addNavButton(at: .right, with: Resources.Strings.Session.navBarRightFinish)
+            
+            timerView.configure(with: self.timerDuration, progress: 0.0)
         }
 }
 

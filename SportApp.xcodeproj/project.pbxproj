@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5B6B37082922222700AA1CD9 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6B37072922222700AA1CD9 /* TimerView.swift */; };
 		5B6B370B2922230D00AA1CD9 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6B370A2922230D00AA1CD9 /* ProgressView.swift */; };
+		5B6B370D29262E0400AA1CD9 /* PercentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6B370C29262E0400AA1CD9 /* PercentView.swift */; };
 		5BB85B2C291ADAD40052F270 /* WAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB85B2B291ADAD40052F270 /* WAButton.swift */; };
 		5BB8D739291C247700C6C496 /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB8D738291C247700C6C496 /* WeekView.swift */; };
 		5BB8D73B291C263600C6C496 /* WeekDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB8D73A291C263600C6C496 /* WeekDayView.swift */; };
@@ -35,6 +36,7 @@
 /* Begin PBXFileReference section */
 		5B6B37072922222700AA1CD9 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		5B6B370A2922230D00AA1CD9 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		5B6B370C29262E0400AA1CD9 /* PercentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentView.swift; sourceTree = "<group>"; };
 		5BB85B2B291ADAD40052F270 /* WAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAButton.swift; sourceTree = "<group>"; };
 		5BB8D738291C247700C6C496 /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
 		5BB8D73A291C263600C6C496 /* WeekDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDayView.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 			children = (
 				5B6B37072922222700AA1CD9 /* TimerView.swift */,
 				5B6B370A2922230D00AA1CD9 /* ProgressView.swift */,
+				5B6B370C29262E0400AA1CD9 /* PercentView.swift */,
 			);
 			path = Timer;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				5BEAA80F2918035100C4636B /* AppDelegate.swift in Sources */,
 				5BEAA8112918035100C4636B /* SceneDelegate.swift in Sources */,
 				5BEAA83D291985AC00C4636B /* ProgressController.swift in Sources */,
+				5B6B370D29262E0400AA1CD9 /* PercentView.swift in Sources */,
 				5BEAA83B2919857D00C4636B /* SettingController.swift in Sources */,
 				5BD87FEC291B922600A5002E /* BaseView.swift in Sources */,
 				5BB8D73B291C263600C6C496 /* WeekDayView.swift in Sources */,

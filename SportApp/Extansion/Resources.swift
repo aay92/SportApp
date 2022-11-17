@@ -18,6 +18,7 @@ enum Resources {
         static let textGray = UIColor(hexString: "#545C77")
         static let background = UIColor(hexString: "#F8F9F9")
         static let secondary = UIColor(hexString: "#F0F3FF")
+        static let subTitleGray = UIColor(hexString: "#9BA4B0")
     }
     
     //MARK: - All strings in app

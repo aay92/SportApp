@@ -34,7 +34,14 @@ enum Resources {
             static let navBarRightFinish = "Finish"
             static let elapsedTimeLabel = "Elapsed Time"
             static let remainengTime = "Remaineng Time"
-
+            
+            static let workoutStats = "Workout Stats"
+            static let stepsCounter = "Steps Counter"
+            
+            static let heartRate = "Heart Rate"
+            static let averagePace = "Average Pace"
+            static let totalSteps = "Total Steps"
+            static let totalDistance = "Total Distance"
         }
         
         enum TabBar {
@@ -72,11 +79,14 @@ enum Resources {
                 case .setting:
                     return UIImage(named: "Gear")
                 }
-//                static var overview = UIImage(named: "overview")
-//                static var session = UIImage(named: "Clock")
-//                static var progress = UIImage(named: "Analytics.png")
-//                static var settings = UIImage(named: "Gear")
+    
             }
+        }
+        enum ImagesSession {
+            static let heartBeatIcon = UIImage(named: "Heart_Beat_Icon")
+            static let mapsIcon = UIImage(named: "Maps_Icon")
+            static let speedIcon = UIImage(named: "Speed_Icon")
+            static let stepsIcon = UIImage(named: "Steps_Icon")
         }
     }
     

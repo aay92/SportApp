@@ -18,7 +18,7 @@ class WABaseInfoView: BaseView {
     
     private let button = WAButton(with: .primary)
     
-    private let contentView: UIView = {
+    let contentView: UIView = {
         let view = UIView()
         view.backgroundColor = .white
         view.layer.borderColor = Resources.Color.separator.cgColor

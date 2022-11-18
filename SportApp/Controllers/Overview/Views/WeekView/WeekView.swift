@@ -31,8 +31,8 @@ extension WeekView {
        ])
     }
     
-    override func configureAppereance(){
-        super.configureAppereance()
+    override func configureAppearance(){
+        super.configureAppearance()
         
         stackView.spacing = 7
         stackView.distribution = .fillEqually

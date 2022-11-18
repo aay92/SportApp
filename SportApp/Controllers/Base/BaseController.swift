@@ -32,12 +32,12 @@ class BaseController: UIViewController {
         view.backgroundColor = Resources.Color.background
     }
     //    for a job test
-    @objc func navBarLeftButtonHandler(){
+    func navBarLeftButtonHandler(){
         print("nav Bar LEFT Button Handler")
     }
     
     //    for a job test
-    @objc func navBarRightButtonHandler(){
+    func navBarRightButtonHandler(){
         print("nav Bar RIGHT Button Handler")
         
     }
@@ -55,10 +55,12 @@ extension BaseController {
         switch position {
             
         case .left:
-            button.addTarget(self, action: #selector(navBarLeftButtonHandler), for: .touchUpInside)
+            button.addTarget(self, action:
+                                #selector(navBarLeftButtonHandler), for: .touchUpInside)
             navigationItem.leftBarButtonItem = UIBarButtonItem(customView: button)
         case .right:
-            button.addTarget(self, action: #selector(navBarRightButtonHandler), for: .touchUpInside)
+            button.addTarget(self, action:
+                                #selector(navBarRightButtonHandler), for: .touchUpInside)
             navigationItem.rightBarButtonItem = UIBarButtonItem(customView: button)
         }
     }

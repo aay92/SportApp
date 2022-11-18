@@ -61,8 +61,8 @@ extension TimerView.PercentView {
         ])
     }
     
-    override func configureAppereance() {
-        super.configureAppereance()
+    override func configureAppearance() {
+        super.configureAppearance()
         
     }
 }

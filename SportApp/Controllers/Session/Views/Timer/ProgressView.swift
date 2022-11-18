@@ -89,7 +89,6 @@ extension TimerView {
             
             (1...9).forEach { _ in
                 let barAngel = CGFloat.pi * angel
-                
                 let startBarPoint = CGPoint(
                     x: cos(-barAngel) * startBarRadius + center.x,
                     y: sin(-barAngel) * startBarRadius + center.y

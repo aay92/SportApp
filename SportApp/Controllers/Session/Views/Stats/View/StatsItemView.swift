@@ -97,8 +97,8 @@ extension StatsItemView {
             stackView.trailingAnchor.constraint(equalTo: trailingAnchor),
         ])
     }
-    override func configureAppereance(){
-        super.configureAppereance()
+    override func configureAppearance(){
+        super.configureAppearance()
         
 //        backgroundColor = .red
     }

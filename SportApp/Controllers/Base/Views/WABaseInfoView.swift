@@ -37,7 +37,7 @@ class WABaseInfoView: BaseView {
     }
     
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(frame: .zero)
     }
     
     func addButtonTarget(target: Any?, action: Selector){
@@ -78,8 +78,8 @@ extension WABaseInfoView {
         ])
     }
     
-    override func configureAppereance() {
-        super.configureAppereance()
+    override func configureAppearance() {
+        super.configureAppearance()
         backgroundColor = .clear
     }
 }

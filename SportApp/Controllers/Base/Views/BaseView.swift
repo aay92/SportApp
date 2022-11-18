@@ -14,16 +14,20 @@ class BaseView: UIView {
         
         setupViews()
         constraintViews()
-        configureAppereance()
+        configureAppearance()
     }
     
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: coder)
+        
+        setupViews()
+        constraintViews()
+        configureAppearance()
     }
 }
 
 @objc extension BaseView {
     func setupViews(){}
     func constraintViews(){}
-    func configureAppereance(){}
+    func configureAppearance(){}
 }

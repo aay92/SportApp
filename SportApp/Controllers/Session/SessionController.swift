@@ -13,7 +13,7 @@ final class SessionController: BaseController {
     private let timerDuration = 20.0
     
     private let statsView = StatsView(with: Resources.Strings.Session.workoutStats)
-    private let stepsView = WABaseInfoView(with: Resources.Strings.Session.stepsCounter)
+    private let stepsView = StapsView(with: Resources.Strings.Session.stepsCounter)
     
     
     override func navBarLeftButtonHandler(){
@@ -73,12 +73,21 @@ extension SessionController {
         addNavButton(at: .right, with: Resources.Strings.Session.navBarRightFinish)
         
         timerView.configure(with: timerDuration, progress: 0)
-            statsView.configure(with: [
+           
+        statsView.configure(with: [
                 .heartRate(value: "144"),
                 .averagePace(value: "15"),
                 .totalSteps(value: "1718"),
                 .totalDistance(value: "1728")
             ])
+        
+        stepsView.configure(with: [
+            .init(value: "8k", heightParm: 1, title: "2/13"),
+            .init(value: "8k", heightParm: 0.8, title: "2/13"),
+            .init(value: "8k", heightParm: 0.6, title: "2/13"),
+            .init(value: "8k", heightParm: 0.7, title: "2/13"),
+        ])
+
 //            Передача данных через call back
 //            timerView.callBack = {[weak self] in
 ////                guard let self else { return }
@@ -86,6 +95,7 @@ extension SessionController {
 //                    self?.navBarRightButtonHandler()
 //                }
 //            }
+
         }
 }
 

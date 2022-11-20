@@ -64,6 +64,5 @@ extension StatsView {
      }
      override func configureAppearance(){
          super.configureAppearance()
-         
      }
  }
